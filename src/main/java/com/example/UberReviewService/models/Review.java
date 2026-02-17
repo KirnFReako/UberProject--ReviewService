@@ -15,7 +15,8 @@ import java.util.Date;
 
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "bookingreview")
+@Table(name = "booking_review")
+@Inheritance(strategy = InheritanceType.JOINED) //single table for parent and child class,tableclass
 public class Review extends BaseModel{
 
 // better segregation using base model
